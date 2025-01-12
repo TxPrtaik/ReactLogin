@@ -5,7 +5,7 @@ require('dotenv').config();
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SEC,
-    callbackURL: 'http://localhost:1010/auth/google/callback'
+    callbackURL: 'https://reactlogin-1xsq.onrender.com/auth/google/callback'
   },
   async(accessToken, refreshToken, profile, done) => {
     // Handle user authentication and session management here

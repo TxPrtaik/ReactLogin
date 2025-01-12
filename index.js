@@ -37,7 +37,7 @@ app.get('/auth/google',
       d= d[0].id
     }
     
-     res.redirect(`http://localhost:3000/?user=${encodeURIComponent(d)}`)
+     res.redirect(`https://brilliant-florentine-b1da75.netlify.app/?user=${encodeURIComponent(d)}`)
    
 
     }
